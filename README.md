@@ -8,6 +8,12 @@
 <p>Proyecto académico inicial demostrativo en dónde se tenía que realizar la maquetación desde cero de un sitio web informativo tratando sobre aspectos importantes y culturales del país centroamericano Costa Rica. Todo el código HTML y CSS es implementado sin la utilización de framework de diseño. Este fue uno de mis primeros proyectos a gran escala que me ayudó a incursionar de lleno en el mundo del desarrollo web.<b> Por motivos de restricciones en el límite de archivos, se ha descartado la subida de archivos de vídeo.</b></p>
 
 
+
+<h2>¿Deseas ver la demo de este proyecto?</h2>
+
+<p>Solamente accede al siguiente enlace: https://danielrivera03.github.io/maquetacion-html-css/</p>
+
+
 <h2>Algunas Capturas</h2>
 
 <p>Página principal (index)</p>
