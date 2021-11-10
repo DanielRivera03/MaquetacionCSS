@@ -1,0 +1,3098 @@
+
+/* ESTILOS GENERALES DE TODOS LOS ELEMENTOS DE ESTA WEB */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Exo', sans-serif;
+}
+
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+/* SCROLL DE DESPLAZAMIENTO MODIFICADO */
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #0B0B61;
+  outline: 4px solid #F00;
+}
+
+body::-moz-scrollbar {
+    width: 0.7em;
+}
+ 
+body::-moz-scrollbar-track {
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-moz-scrollbar-thumb {
+  background-color: #0B0B61;
+  outline: 4px solid #F00;
+}
+
+body::-o-scrollbar {
+    width: 0.7em;
+}
+ 
+body::-o-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-o-scrollbar-thumb {
+  background-color: #0B0B61;
+  outline: 4px solid #F00;
+}
+
+body::-ms-scrollbar {
+    width: 0.7em;
+}
+ 
+body::-ms-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-ms-scrollbar-thumb {
+  background-color: #0B0B61;
+  outline: 4px solid #F00;
+}
+
+
+/* CAMBIO DE COLOR SELECCION DE TEXTO GLOBAL */
+
+*::-moz-selection{
+   background: #1C1C1C;
+   color: #FFFFFF;
+}
+
+*::-webkit-selection{
+	background: #1C1C1C;
+	color: #FFFFFF;
+}
+
+*-o-selection{
+	background: #1C1C1C;
+	color: #FFFFFF;
+}
+
+*-ms-selection{
+	background: #1C1C1C;
+	color: #FFFFFF;
+}
+
+*::selection {
+   background: #1C1C1C;
+   color: #FFFFFF;
+}
+
+/* 
+----------------------------
+----------------------------
+
+BANNERS Y LOGO DE SITIO WEB
+
+-----------------------------
+-----------------------------
+*/
+
+.banner{
+	background: url("../img/banner.png") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 880px;
+	border-top: 10px solid #E04444;
+}
+
+.banner-subcontenido{
+	background: url("../img/banner.png") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 380px;
+	border-top: 10px solid #E04444;
+	border-bottom: 5px solid #0489B1;
+}
+
+.logo{
+	float: left;
+	margin-left: 1.05em;
+}
+
+.logo img{
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transition: all 0.6s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	animation-duration: 2s; 
+    -webkit-animation-duration: 2s; 
+    -moz-animation-duration: 2s; 
+    -o-animation-duration: 2s; 
+    -ms-animation-duration: 2s; 
+    animation-name: anim-logo;
+    -webkit-animation-name: anim-logo;
+    -moz-animation-name: anim-logo;
+    -o-animation-name: anim-logo;
+    -ms-animation-name: anim-logo;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+}
+
+.logo img:hover{
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transition: all 0.6s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	opacity: 0.8;
+}
+
+.logo a{
+	display: block;
+}
+
+.top-menu{
+	float: right;
+}
+
+/* BARRA SUPERIOR DE ESTE SITIO WEB */
+.top-header{
+	margin-top: 4em;
+}
+
+/*
+----------------------------
+----------------------------
+
+     MENU DE NAVEGACION
+
+-----------------------------
+-----------------------------
+*/
+
+nav ul li{
+	display: inline-block;
+	padding: 4px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 1.2em;
+	font-family: 'Exo', sans-serif;
+}
+
+nav ul li.activo-menu a{
+	color: #01A9DB;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.2em;
+	font-family: 'Exo', sans-serif;
+}
+
+nav ul li a:hover{
+	color: #E04444;
+	font-size: 1.2em;
+}
+
+.menu-efecto a::before,
+.menu-efecto a::after{
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.menu-efecto a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.menu-efecto a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.menu-efecto a:hover::before,
+.menu-efecto a:hover::after,
+.menu-efecto a:focus::before,
+.menu-efecto a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+	
+
+/*
+-----------------------------
+-----------------------------
+
+TITULO DE BANNERS Y ELEMENTOS
+      A FINES DE ESTOS
+
+------------------------------
+------------------------------
+*/
+
+.banner-informacion{
+	margin-top: 26em;
+	text-align: center;
+}
+
+.banner-informacion-subcontenido{
+	margin-top: 6.2em;
+	text-align: center;
+}
+
+.banner-informacion h1{
+	color: #FFFFFF;
+	font-size: 3.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-family: 'Maven Pro', sans-serif;
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	transition: all 1.3s ease-in-out;
+	-webkit-transition: all 1.3s ease-in-out;
+	-moz-transition: all 1.3s ease-in-out;
+	-o-transition: all 1.3s ease-in-out;
+	-ms-transition: all 1.3s ease-in-out;
+	animation-duration: 2s; 
+    -webkit-animation-duration: 2s; 
+    -moz-animation-duration: 2s; 
+    -o-animation-duration: 2s; 
+    -ms-animation-duration: 2s; 
+    -webkit-animation: 2s intermitente 3;
+    -moz-animation: 2s intermitente 3;
+    -o-animation: 2s intermitente 3;
+    -ms-animation: 2s intermitente 3;
+    animation: 2s intermitente 3;
+}
+
+.banner-informacion h1:hover{
+	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transition: all 1.3s ease-in-out;
+	-webkit-transition: all 1.3s ease-in-out;
+	-moz-transition: all 1.3s ease-in-out;
+	-o-transition: all 1.3s ease-in-out;
+	-ms-transition: all 1.3s ease-in-out;
+}
+
+.banner-informacion-subcontenido h1{
+	color: #FFFFFF;
+	font-size: 3.5em;
+	font-weight: bold;
+	font-family: 'Maven Pro', sans-serif;
+	text-decoration: none; 
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	transition: all 1.3s ease-in-out;
+	-webkit-transition: all 1.3s ease-in-out;
+	-moz-transition: all 1.3s ease-in-out;
+	-o-transition: all 1.3s ease-in-out;
+	-ms-transition: all 1.3s ease-in-out;
+	animation-duration: 2s; 
+    -webkit-animation-duration: 2s; 
+    -moz-animation-duration: 2s; 
+    -o-animation-duration: 2s; 
+    -ms-animation-duration: 2s; 
+   	-webkit-animation: 2s estirar 1;
+   	-moz-animation: 2s estirar 1;
+   	-o-animation: 2s estirar 1;
+   	-ms-animation: 2s estirar 1;
+}	
+
+.banner-informacion-subcontenido h1:hover{
+	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transition: all 1.3s ease-in-out;
+	-webkit-transition: all 1.3s ease-in-out;
+	-moz-transition: all 1.3s ease-in-out;
+	-o-transition: all 1.3s ease-in-out;
+	-ms-transition: all 1.3s ease-in-out;
+}
+
+.banner-informacion h3{
+	color: #FFFFFF;
+	font-family: 1em;
+	font-weight: 300;
+	width: 67%;
+	margin: 0px auto;
+	line-height: 1.5em;
+}
+
+/* REDES SOCIALES -- INDEX */
+
+.social-red{
+	float: left;
+	width: 25%;
+	height: 150px;
+	text-align: center;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+.redes-sociales{
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.facebook{
+	background: url("../img/fb-icon.png");
+	padding: 4em 2em;
+}
+
+.twitter{
+	background: url("../img/tw-icon.png");
+	padding: 3.5em 2em;
+}
+
+.youtube{
+	background: url("../img/yt-icon.png");
+	padding: 3.7em 2em;
+}
+
+.escribenos{
+	background: url("../img/ct-icon.png");
+	padding: 3.7em 2em;
+}
+
+.facebook.social-red:hover{
+	opacity: 0.8;
+	-webkit-filter: blur(0px);
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(0px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(0px);
+	-o-filter: blur(1px);
+}
+
+.twitter.social-red:hover{
+	opacity: 0.8;
+	-webkit-filter: blur(0px);
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(0px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(0px);
+	-o-filter: blur(1px);
+}
+
+.youtube.social-red:hover{
+	opacity: 0.8;
+	-webkit-filter: blur(0px);
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(0px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(0px);
+	-o-filter: blur(1px);
+}
+
+.escribenos.social-red:hover{
+	opacity: 0.8;
+	-webkit-filter: blur(0px);
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(0px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(0px);
+	-o-filter: blur(1px);
+}
+
+/* 
+--------------------------------
+--------------------------------
+
+BLOQUE DE CONTENEDORES DE TODAS
+  LAS SECCIONES DENTRO DE ESTE
+            SITIO WEB
+
+--------------------------------
+--------------------------------
+*/            
+
+/* INDEX */
+.informacion{
+	background: url("../img/bg_info.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+	background-size: 100% 100%;
+	padding: 3.5em 0;
+}
+
+/* LINEA DE TIEMPO */
+.informacion-linea-de-tiempo{
+	padding: 3.5em 0;
+	background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 );
+
+}
+
+/* PERSONAJES */
+.informacion-personajes{
+	padding: 3.5em 0;
+	background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 );
+
+}
+
+/* MULTIMEDIA */
+.informacion-multimedia{
+	padding: 3.5em 0;
+	background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 );
+
+}
+
+/* GASTRONOMIA */
+.informacion-gastronomia{
+	padding: 3.5em 0;
+	background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 )
+}
+
+/* MAPA DEL SITIO */
+.informacion-mapa-del-sitio{
+	padding: 3.5em 0;
+	background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 )
+}
+
+/* ESCRIBENOS -- FORMULARIO DE CONTACTO */
+.informacion-escribenos{
+	padding: 3.5em 0;
+	background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 );
+
+}
+
+/* INDEX */
+.informacion-titulo{
+	width: 100%;
+	max-width: 610px;
+	text-align: center;
+}
+
+/* LINEA DE TIEMPO */
+.informacion-titulo-linea-de-tiempo{
+	width: 100%;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+/* PERSONAJES */
+.informacion-titulo-personajes{
+	width: 100%;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+/* MULTIMEDIA */
+.informacion-multimedia{
+	width: 100%;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+/* GASTRONOMIA */
+.informacion-gastronomia{
+	width: 100%;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+/* MAPA DEL SITIO */
+.informacion-mapa-del-sitio{
+	width: 100%;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+/*¨MULTIMEDIA - GALERIA DE FOTOS */
+.seccion-galeria-de-fotos{
+	width: 100%;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+/*¨MULTIMEDIA - GALERIA DE VIDEOS */
+.seccion-galeria-de-videos{
+	width: 100%;
+	max-width: 100% !important;
+	text-align: center;
+}
+
+/* INDEX */
+.informacion-titulo h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* LINEA DE TIEMPO */
+.informacion-titulo-linea-de-tiempo h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* PERSONAJES */
+.informacion-titulo-personajes h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* MULTIMEDIA */
+.informacion-multimedia h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* GASTRONOMIA */
+.informacion-gastronomia h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* MAPA DEL SITIO */
+.informacion-mapa-del-sitio h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* SECCION - MULTIMEDIA - GALERIA DE FOTOS */
+.seccion-galeria-de-fotos h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* SECCION - MULTIMEDIA - GALERIA DE VIDEOS */
+.seccion-galeria-de-videos h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+/* FORMULARIO DE CONTACTO -- ESCRIBENOS */
+.informacion-escribenos h3{
+	color: #000;
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-webkit-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-moz-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+	-o-text-shadow: 2px 2px 4px rgba(255, 100, 130, 0.32);
+}
+
+
+/*ARTICLE CONTENEDOR DE FOTOS - MULTIMEDIA */
+.fotos img{
+	width: 49%;
+	float: left;
+	height: auto;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	display: inline;
+}
+
+.accion-hover img:hover{
+	background: url("../img/zoom-img.png");
+	width: auto;
+	height: auto;
+}
+
+.mapa-del-sitio{
+	width: 100% !important;
+	max-width: 100%;
+	height: 100% !important;
+	max-height: 100%;
+}
+
+.secciones-mapa{
+	width: 19%;
+	height: 100%;
+	max-height: 100%;
+	margin-left: 1%;
+	display: inline;
+	float: left;
+}
+
+.mapa-final{
+	width: 100%;
+	height: auto;
+	float: left;
+	display: inline;
+}
+
+.secciones-mapa p, .secciones-mapa a{
+	list-style-type: none;
+	font-size: 1em;
+	text-align: justify;
+	text-decoration: none;
+	color: #0101DF;
+}
+
+.secciones-mapa a, .secciones-mapa dd dl{
+	color: #F00;
+	text-align: justify;
+}
+
+.secciones-mapa a:hover{
+	color: #000;
+}
+
+p.texto-alternativo{
+	color: #000;
+	text-align: justify;
+}
+
+/*ARTICLE CONTENEDOR DE VIDEOS - MULTIMEDIA */
+.videos img{
+	width: 49%;
+	float: left;
+	height: auto;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	display: inline;
+	transition: all 2s ease-in-out;
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+}
+
+.videos img:hover{
+	transition: all 2s ease-in-out;
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	opacity: 0.7;
+}
+
+/* INDEX */
+.informacion-titulo p{
+	margin-top: 5px;
+	color: #6B6B6B;
+	font-size: 0.95em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* LINEA DE TIEMPO */
+.informacion-titulo-linea-de-tiempo p{
+	margin-top: 5px;
+	color: #6B6B6B;
+	font-size: 1.05em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* PERSONAJES */
+.informacion-titulo-linea-de-tiempo p{
+	margin-top: 5px;
+	color: #6B6B6B;
+	font-size: 1.05em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* MULTIMEDIA */
+.informacion-multimedia p{
+	margin-top: 5px;
+	color: #6B6B6B;
+	font-size: 1.05em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* GASTRONOMIA */
+.informacion-multimedia p{
+	margin-top: 5px;
+	color: #6B6B6B;
+	font-size: 1.05em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* FORMMULARIO DE CONTACTO -- ESCRIBENOS */
+.informacion-escribenos p{
+	margin-top: 5px;
+	color: #6B6B6B;
+	font-size: 1.05em;
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+}
+
+.informacion-titulo h5{
+	color:#E04444;
+	margin-top:5px;
+	font-size:1em;
+	font-weight:300;
+}
+
+.informacion-margin{
+	margin-top: 3.5em;
+}
+
+p.seccion-historia-cr{
+	color:#000;
+	font-size:0.98em;
+	line-height:1.8em;
+	width:100%;
+	font-weight: 400;
+	text-align: justify;
+}
+
+p.seccion-linea-de-tiempo-cr{
+	color: #000;
+	font-size: 1.0em;
+	line-height: 1.8em;
+	width: 100%;
+	text-align: justify;
+	font-weight: 400;
+}
+
+p.seccion-personajes-cr{
+	color: #000;
+	font-size: 1.0em;
+	line-height: 1.8em;
+	width: 100%;
+	text-align: justify;
+	font-weight: 400;
+}
+
+p.seccion-multimedia-cr{
+	color: #000;
+	font-size: 1.0em;
+	line-height: 1.8em;
+	width: 100%;
+	text-align: justify;
+	font-weight: 400;
+}
+
+p.seccion-gastronomia-cr{
+	color: #000;
+	font-size: 1.0em;
+	line-height: 1.8em;
+	width: 100%;
+	text-align: justify;
+	font-weight: 400;
+}
+
+.informacion-cr li{
+	list-style-type: none;
+	list-style-image: url("../img/list-icon.png");
+	margin-bottom: 1.2em;
+	text-align: justify;
+}
+
+
+p.seccion-historia-cr span{
+	font-size:1.1em;
+	color:#F00;
+	font-weight:600;
+	margin-right:5px;
+}
+
+.bg-movil{
+	display: none;
+}
+
+#bg-linea img{
+	display: block;
+	margin: 0px auto;
+	width: 100%;
+	height: auto;
+}
+
+/*
+------------------------------
+------------------------------
+
+BLOQUE DE IMAGENES MINIATURAS
+            INDEX
+
+-------------------------------
+-------------------------------
+*/
+
+.informacion-cr p{
+	color: #000;
+	margin-bottom: 1em;
+	font-size: 0.9em;
+	font-weight: 400;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+.informacion-cr h4{
+	color: #000;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+.galeria{
+	background: url("../img/bg_fotos.jpg") no-repeat;
+	background-size: 100% 100%;
+	padding: 6em 0;
+}
+
+.galeria-titulo{
+	text-align: center;
+}
+
+.galeria-titulo h3{
+	color:#FFFFFF;
+	font-size:2.3em;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight:bold;
+	letter-spacing:3.5px;
+}
+
+.galeria-titulo p{
+	color:#F00;
+	margin-top:5px;
+	font-size:1em;
+	font-style:italic;
+	font-weight:300;
+	margin-bottom: 1.3em;
+}
+
+.galeria-titulo h5{
+	color: #E04444;
+	margin-top: 5px;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+#fotos_lista .sub_fotos {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width: 25%;
+	display:none;
+	float:left;
+	overflow:hidden;
+	margin: 0;
+}
+
+div#fotos_lista{
+	padding: 0px 0px;
+}
+
+.fotos-wrapper{
+	overflow: hidden;
+	position: relative !important;
+	cursor: pointer;
+}
+
+.sub_fotos img{
+	width:100%;
+	transition: all 300ms!important;
+	-webkit-transition: all 300ms!important;
+	-moz-transition: all 300ms!important;
+	-o-transition: all 300ms!important;
+	-ms-transition: all 300ms!important;
+}
+
+.sub_fotos img:hover{
+	transition: all 300ms!important;
+	-webkit-transition: all 300ms!important;
+	-moz-transition: all 300ms!important;
+	-o-transition: all 300ms!important;
+	-ms-transition: all 300ms!important;
+}
+
+.sub_fotos label{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	bottom: -40px;
+}
+
+.sub_fotos .label-bg{
+	background: #22B4B8;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.sub_fotos .label-text{
+	color:#FFFFFF;
+	position: relative;
+	z-index:500;
+	padding:5px 8px;
+}
+
+.sub_fotos{
+	display:block;
+	font-size:9px;
+	font-size: 12px;
+	text-transform:uppercase;
+}
+
+.contenedor:after{
+	content: "\0020"; 
+	display: block;
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+
+.bloque-seccion-caja:before, .bloque-seccion-caja:after{
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; 
+}
+
+.bloque-seccion-caja:after{
+  clear: both; 
+}
+
+
+.texto_principal{
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	-moz-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	-o-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	display: block;
+	left: 0;
+	top: -152px;
+	width: 290px;
+	height: 219px;
+	background: #232323;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+}
+
+.sub_caja_foto .texto_principal{
+	top: 0px;
+	width: 100%;
+	height: 274px;
+}
+
+.sub_caja_foto .texto_principal:hover{
+	top: 0px;
+	opacity: 1;
+	filter: alpha(opacity=99); 
+	-webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	-moz-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	-o-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+}
+
+.texto_principal{
+	display: none;
+	top: 0;
+	width: 100%;
+	position: absolute;
+	background: rgba(52, 53, 52, 0.75);
+	height: 100%;
+	text-align: center;
+	padding:2em;
+}
+
+.fotos-wrapper:hover div.texto_principal{
+	display: block;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+.sub_texto{
+	border: 2px solid #FFFFFF;
+	padding: 2.7em;
+}
+
+.sub_texto h4{
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom:1.5em;
+}
+
+.sub_texto p{
+	color: #FFFFFF;
+	font-size: 0.8em;
+	padding-top: 5px;
+	font-style: italic;
+}
+
+/* FOOTER DE TODAS LAS PAGINAS */
+
+.footer{
+	background-color: #E04444; 
+	padding: 3em 0;
+	-webkit-box-shadow: 0px -4px 8px 0px rgba(50, 50, 50, 0.96);
+	-moz-box-shadow: 0px -4px 8px 0px rgba(50, 50, 50, 0.96);
+	-o-box-shadow: 0px -4px 8px 0px rgba(50, 50, 50, 0.96);
+	-ms-box-shadow: 0px -4px 8px 0px rgba(50, 50, 50, 0.96);
+	box-shadow: 0px -4px 8px 0px rgba(50, 50, 50, 0.96);
+	border-top: 2px solid #000;
+}
+
+.footer-logo{
+	float: left;
+}
+
+.footer-info{
+	float: left;
+	color: #FFFFFF;
+	margin: 17px 0 0 23px;
+}
+
+p.footer-info a{
+	color: #FFFFFF;
+}
+
+p.footer-info a:hover{
+	color:#000;
+}
+
+/* CORREO ELECTRONICO - DOMINIO FOOTER */
+.email{
+	float:right;
+	padding-top: 0.5em;
+}
+
+span.mail{
+	color: #FFFFFF;
+	font-size: 1.4em;
+	text-decoration: underline;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+span.mail:hover{
+	color: #000;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* LINEA DIVISORA DECORATIVA */
+.line-hr{
+	width: 100%;
+	height: 0.5px;
+	border: groove;
+	margin-bottom: 1.1em;
+}
+
+#multimedias{
+	width: 100%;
+	max-width: 100% !important;
+	height: auto;
+}
+
+.categorias img{
+	width: 31% !important;
+	float: left;
+	height: auto;
+	margin-left: 2%;
+	display: inline;
+	border-radius: 5px;
+	box-shadow: 0px 0px 3px #000;
+	transition: all .8s;
+	-webkit-transition: all .8s;
+	-moz-transition: all .8s;
+	-o-transition: all .8s;
+	-ms-transition: all .8s;
+}
+
+.categorias img:hover{
+	box-shadow: 0px 0px 3px #F00;
+	transition: all .8s;
+	-webkit-transition: all .8s;
+	-moz-transition: all .8s;
+	-o-transition: all .8s;
+	-ms-transition: all .8s;
+	cursor: pointer;
+}
+
+#gastronomia{
+	width: 100%;
+	max-width: 100% !important;
+	height: auto;
+	max-height: 100% !important;
+}
+
+.gatronomia-bloque{
+	width: 100% !important;
+	max-width: 100%;
+	height: auto;
+	max-height: 100% !important;
+}
+
+.comidas-cr{
+	width: 100%;
+	margin-left: 0.5%;
+	margin-bottom: 1em;
+	height: auto;
+	float: left;
+	display: inline;
+}
+
+/* 
+------------------------------
+------------------------------
+
+BLOQUE DE FOTOS GASTRONOMIA
+
+------------------------------
+------------------------------
+*/
+
+#empanada{
+	background: url("../img/icon-gastronomia-1.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	float: left;
+	display: inline;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#empanada:hover{
+	background: url("../img/img-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#sopa-negra{
+	background: url("../img/icon-gastronomia-2.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	float: right;
+	display: inline;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#sopa-negra:hover{
+	background: url("../img/img-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#guiso-ayote{
+	margin-top: 1em;
+	background: url("../img/icon-gastronomia-3.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	float: left;
+	display: inline;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#guiso-ayote:hover{
+	background: url("../img/img-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#tamal-asado{
+	margin-top: 1em;
+	background: url("../img/icon-gastronomia-4.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	float: right;
+	display: inline;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#tamal-asado:hover{
+	background: url("../img/img-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#gallo-pinto{
+	margin-top: 1em;
+	background: url("../img/icon-gastronomia-5.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	float: left;
+	display: inline;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#gallo-pinto:hover{
+	background: url("../img/img-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#carne-mechada{
+	margin-top: 1em;
+	background: url("../img/icon-gastronomia-6.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	float: right;
+	display: inline;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#carne-mechada:hover{
+	background: url("../img/img-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 325px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/*
+-----------------------------
+-----------------------------
+
+BLOQUE DE FOTOS MULTIMEDIA
+
+-----------------------------
+-----------------------------
+*/
+
+article.margin-fotos{
+	margin-bottom: 0.7em;
+}
+
+.seccion-galeria-de-fotos{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+
+/* FOTO 1 */
+#rio-celeste{
+	float: left;
+	display: inline;
+	background: url("../img/galeria-foto-1.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#rio-celeste:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FOTO 2*/
+#playa-flamingo{
+	float: right;
+	display: inline;
+	background: url("../img/galeria-foto-2.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#playa-flamingo:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FOTO 3 */
+#zoo-bolivar{
+	float: left;
+	display: inline;
+	background: url("../img/galeria-foto-3.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#zoo-bolivar:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FOTO 4 */
+#playa-hermosa{
+	float: right;
+	display: inline;
+	background: url("../img/galeria-foto-4.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#playa-hermosa:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FOTO 5 */
+#playa-avenalla{
+	float: left;
+	display: inline;
+	background: url("../img/galeria-foto-5.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#playa-avenalla:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FOTO 6 */
+#volcan-arenal{
+	float: right;
+	display: inline;
+	background: url("../img/galeria-foto-6.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#volcan-arenal:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FOTO 7 */
+#iglesia-los-angeles{
+	float: left;
+	display: inline;
+	background: url("../img/galeria-foto-7.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#iglesia-los-angeles:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FOTO 8 */
+#san-jose-central{
+	float: right;
+	display: inline;
+	background: url("../img/galeria-foto-8.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#san-jose-central:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* 
+-------------------------
+-------------------------
+
+ BLOQUE SIMBOLOS PATRIOS
+
+-------------------------
+-------------------------
+*/ 
+
+.seccion-simbolos-patrios{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+
+#bandera{
+	float: left;
+	display: inline;
+	background: url("../img/simbolos-1.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#bandera:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#escudo{
+	float: right;
+	display: inline;
+	background: url("../img/simbolos-2.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#escudo:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#himno{
+	float: left;
+	display: inline;
+	background: url("../img/simbolos-3.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#himno:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#flor{
+	float: right;
+	display: inline;
+	background: url("../img/simbolos-4.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#flor:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#arbol{
+	float: left;
+	display: inline;
+	background: url("../img/simbolos-5.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#arbol:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#ave{
+	float: right;
+	display: inline;
+	background: url("../img/simbolos-6.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#ave:hover{
+	background: url("../img/zoom-imagen.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/*
+------------------------------------
+------------------------------------
+
+BLOQUE SECCION DE AUDIOS COSTA RICA
+
+------------------------------------
+------------------------------------
+*/
+#audio1-cr{
+	float: left;
+	display: inline;
+	background: url("../img/audio-1.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#audio1-cr:hover{
+	background: url("../img/audio-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#audio2-cr{
+	float: right;
+	display: inline;
+	background: url("../img/audio-2.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+#audio2-cr:hover{
+	background: url("../img/audio-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* FIN */
+
+.informacion-cr h5{
+ 	text-align: justify;
+	padding-top: 1.2em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.animacion:hover{
+	animation-duration: 2s; 
+    -webkit-animation-duration: 2s; 
+    -moz-animation-duration: 2s; 
+    -o-animation-duration: 2s; 
+    -ms-animation-duration: 2s; 
+    animation: 1s rebote 1;
+	-webkit-animation: 1s rebote 1;
+	-moz-animation: 1s rebote 1;
+	-o-animation: 1s rebote 1;
+	-ms-animation: 1s rebote 1;
+}
+
+.animacion-menu:hover{
+	animation: animenu linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 0%;
+  -webkit-animation: animenu linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 0%;
+  -moz-animation: animenu linear 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 0%;
+  -o-animation: animenu linear 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 0%;
+  -ms-animation: animenu linear 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 0%;
+}
+
+
+/* IMAGENES DE GASTRONOMIA RESPONSIVAS AL 100% */
+
+.bg-footer{
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.bg-footer a{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-left: 0.9em;
+}
+
+.bg-footer a:hover{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	color: #000;
+}
+
+.bg-footer li{
+	list-style-type: none;
+	display: inline;
+	margin-left: 0.5em;
+}
+
+.animacion-secundaria{
+	animation: logo-secundario linear 0.8s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: logo-secundario linear 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: logo-secundario linear 0.8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: logo-secundario linear 0.8s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: logo-secundario linear 0.8s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+
+/*
+----------------------------------------------------
+----------------------------------------------------
+
+		  BLOQUE DE ANIMACIONES ESPECIFICAS
+
+----------------------------------------------------
+----------------------------------------------------
+*/		  
+
+/* ANIMACIONES CSS3 A ELEMENTOS MAS ESPECIFICOS */
+
+/* LOGO */
+
+@keyframes anim-logo {
+    0%   {filter: grayscale(0%);}
+    25%  {filter: grayscale(25%);}
+    50%  {filter: grayscale(50%);}
+    100% {filter: grayscale(100%);}
+}
+
+@-webkit-keyframes anim-logo {
+    0%   {-webkit-filter: grayscale(0%);}
+    25%  {-webkit-filter: grayscale(25%);}
+    50%  {-webkit-filter: grayscale(50%);}
+    100% {-webkit-filter: grayscale(100%);}
+}
+
+@-moz-keyframes anim-logo {
+    0%   {-moz-filter: grayscale(0%);}
+    25%  {-moz-filter: grayscale(25%);}
+    50%  {-moz-filter: grayscale(50%); }
+    100% {-moz-filter: grayscale(100%); }
+}
+
+@-o-keyframes anim-logo {
+   	0%   {-o-filter: grayscale(0%);}
+    25%  {-o-filter: grayscale(25%);}
+    50%  {-o-filter: grayscale(50%); }
+    100% {-o-filter: grayscale(100%); }
+}
+
+@-ms-keyframes anim-logo {
+    0%   {-ms-filter: grayscale(0%);}
+    25%  {-ms-filter: grayscale(25%);}
+    50%  {-ms-filter: grayscale(50%); }
+    100% {-ms-filter: grayscale(100%); }
+}
+
+/* TITULO DE BIENVENIDA -- INDEX */
+
+@keyframes intermitente {
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+ }
+}  
+
+
+@-webkit-keyframes intermitente {
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes intermitente {
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes intermitente {
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes intermitente {
+  25%, 75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* TIULO DE BIENVENIDA -- PAGINAS SECUNDARIAS */
+
+@keyframes estirar {
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+@-webkit-keyframes estirar {
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+@-moz-keyframes estirar {
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+@-o-keyframes estirar {
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+@-ms-keyframes estirar {
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+/* EFECTO DE ALGUNAS IMAGENES DENTRO DE ESTA WEB */
+
+@keyframes rebote {
+  20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  65% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes rebote {
+  20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  65% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes rebote {
+  20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  65% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes rebote {
+  20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  65% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-ms-keyframes rebote {
+  20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  65% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+
+/* ANIMACION - MENU */
+
+@keyframes animenu{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  20% {
+    transform:  rotate(15deg) ;
+  }
+  40% {
+    transform:  rotate(-10deg) ;
+  }
+  60% {
+    transform:  rotate(5deg) ;
+  }
+  80% {
+    transform:  rotate(-5deg) ;
+  }
+  100% {
+    transform:  rotate(0deg) ;
+  }
+}
+
+@-moz-keyframes animenu{
+  0% {
+    -moz-transform:  rotate(0deg) ;
+  }
+  20% {
+    -moz-transform:  rotate(15deg) ;
+  }
+  40% {
+    -moz-transform:  rotate(-10deg) ;
+  }
+  60% {
+    -moz-transform:  rotate(5deg) ;
+  }
+  80% {
+    -moz-transform:  rotate(-5deg) ;
+  }
+  100% {
+    -moz-transform:  rotate(0deg) ;
+  }
+}
+
+@-webkit-keyframes animenu {
+  0% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+  20% {
+    -webkit-transform:  rotate(15deg) ;
+  }
+  40% {
+    -webkit-transform:  rotate(-10deg) ;
+  }
+  60% {
+    -webkit-transform:  rotate(5deg) ;
+  }
+  80% {
+    -webkit-transform:  rotate(-5deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+}
+
+@-o-keyframes animenu {
+  0% {
+    -o-transform:  rotate(0deg) ;
+  }
+  20% {
+    -o-transform:  rotate(15deg) ;
+  }
+  40% {
+    -o-transform:  rotate(-10deg) ;
+  }
+  60% {
+    -o-transform:  rotate(5deg) ;
+  }
+  80% {
+    -o-transform:  rotate(-5deg) ;
+  }
+  100% {
+    -o-transform:  rotate(0deg) ;
+  }
+}
+
+@-ms-keyframes animenu {
+  0% {
+    -ms-transform:  rotate(0deg) ;
+  }
+  20% {
+    -ms-transform:  rotate(15deg) ;
+  }
+  40% {
+    -ms-transform:  rotate(-10deg) ;
+  }
+  60% {
+    -ms-transform:  rotate(5deg) ;
+  }
+  80% {
+    -ms-transform:  rotate(-5deg) ;
+  }
+  100% {
+    -ms-transform:  rotate(0deg) ;
+  }
+}
+
+/* LOGO SECUNDARIO -- FOOTER */
+
+@keyframes logo-secundario{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  15% {
+    transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    transform:  translate(0px,0px)  ;
+  }
+  45% {
+    transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    transform:  translate(0px,0px)  ;
+  }
+  75% {
+    transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes logo-secundario{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -moz-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -moz-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -moz-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes logo-secundario {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -webkit-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -webkit-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes logo-secundario {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -o-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -o-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -o-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes logo-secundario {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  15% {
+    -ms-transform:  translate(0px,-25px)  ;
+  }
+  30% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  45% {
+    -ms-transform:  translate(0px,-15px)  ;
+  }
+  60% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  75% {
+    -ms-transform:  translate(0px,-5px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
+
+
+/* 
+-------------------------------------------
+-------------------------------------------
+
+VENTANAS DESPLEGABLES - GASTRONOMIA Y ESTILOS
+		   GENERALES DE LAS MISMAS 
+
+-------------------------------------------
+-------------------------------------------
+*/
+
+.ventana-desplegable {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 400ms ease-in;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
+    -ms-transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow-y: scroll;
+}
+
+.ventana-desplegable:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/* EMPANADA DE QUESO */
+.caja-ventana-empanada{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-1.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 800px;
+}
+
+/* SOPA NEGRA */
+.caja-ventana-sopa{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-2.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 800px;
+}
+
+/* GUISO DE AYOTE TIERNO */
+.caja-ventana-guiso{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-3.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 800px;
+}
+
+/* TAMAL ASADO */
+.caja-ventana-tamal{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-4.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 800px;
+}
+
+/* GALLO PINTO */
+.caja-ventana-gallo{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-5.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 800px;
+}
+
+/* CARNE MECHADA EN SALSA */
+.caja-ventana-carne{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-6.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 800px;
+}
+
+/* 
+-----------------------------------
+-----------------------------------
+
+VENTANAS DESPLEGABLES MULTIMEDIA
+		   GALERIA DE FOTOS
+
+------------------------------------
+------------------------------------
+*/
+
+/* MAPAS DE UBICACION */
+.ventana-desplegable iframe{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 100% !important;
+	max-width: 100%;
+	height: 100%;
+	max-height: 500px !important;
+	border: none;
+	box-shadow: 0px 0px 5px #000;
+}
+
+.ventana-desplegable p{
+	font-size: 1.1em;
+}
+
+.ventana-desplegable button{
+	background: #45484d;
+	background: -moz-linear-gradient(left,  #45484d 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#45484d), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #45484d 0%,#000000 100%);
+	background: -o-linear-gradient(left,  #45484d 0%,#000000 100%);
+	background: -ms-linear-gradient(left,  #45484d 0%,#000000 100%);
+	background: linear-gradient(to right,  #45484d 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
+	color: #FFFFFF;
+	border: 0;
+	border-radius: 5px;
+	font-size: 1.2em;
+	width: 215px;
+	height: 40px;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+}
+
+.ventana-desplegable button:hover{
+	color: #000;
+	background: #ffffff;
+	background: -moz-linear-gradient(left,  #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#e5e5e5 100%);
+	background: -o-linear-gradient(left,  #ffffff 0%,#e5e5e5 100%);
+	background: -ms-linear-gradient(left,  #ffffff 0%,#e5e5e5 100%);
+	background: linear-gradient(to right,  #ffffff 0%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 );
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	box-shadow: 0px 0px 10px #000;
+	cursor: pointer;
+
+}
+
+/*
+----------------------------
+----------------------------
+
+VENTANAS DEPLEGABLES VIDEOS Y
+ SU RESPECTIVO HOVER DE CADA
+           IMAGEN
+
+-----------------------------
+-----------------------------
+*/
+
+/* VIDEO HISTORIA */
+#historia-cr{
+	margin-bottom: 0.7em;
+	float: left;
+	display: inline;
+	background: url("../img/video-seccion-1.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+} 
+
+#historia-cr:hover{
+	background: url("../img/video-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* VIDEO CIUDAD */
+#ciudad-cr{
+	margin-bottom: 0.7em;
+	float: right;
+	display: inline;
+	background: url("../img/video-seccion-2.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+} 
+
+#ciudad-cr:hover{
+	background: url("../img/video-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* VIDEO DEPORTES */
+#deporte-cr{
+	float: left;
+	display: inline;
+	background: url("../img/video-seccion-3.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+} 
+
+#deporte-cr:hover{
+	background: url("../img/video-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+/* VIDEO CULTURA */
+#cultura-cr{
+	float: right;
+	display: inline;
+	background: url("../img/video-seccion-4.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+} 
+
+#cultura-cr:hover{
+	background: url("../img/video-hover.png");
+	background-size: 100% 100%;
+	width: 49%;
+	height: 435px;
+	transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+}
+
+.video-margin{
+	margin-top: 1em;
+}
+
+.caja-ventana-multimedia{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-ventanas-multimedia.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 800px;
+}
+
+.caja-multimedia-video{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 );
+	height: 570px;
+}
+
+/* SIMBOLOS PATRIOS */
+.caja-ventana-simbolos{
+    width: 85%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-ventanas-multimedia.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: auto;
+}
+
+.caja-ventana-simbolos img{
+	width: 100% !important;
+	max-width: 100%;
+	height: 400px;
+	margin-bottom: 1.3em;
+}
+
+.margen-caja{
+    margin: 5% auto;
+}
+
+.ventana-desplegable:target .margen-caja{       
+    margin: 5% auto;
+}
+
+.cerrar{
+    background: #a90329;
+	background: -moz-linear-gradient(left,  #a90329 0%, #8f0222 44%, #6d0019 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019));
+	background: -webkit-linear-gradient(left,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	background: -o-linear-gradient(left,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	background: -ms-linear-gradient(left,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	background: linear-gradient(to right,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+ 
+.cerrar:hover{
+    background: #eeeeee;
+	background: -moz-linear-gradient(left,  #eeeeee 0%, #cccccc 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+	background: -webkit-linear-gradient(left,  #eeeeee 0%,#cccccc 100%);
+	background: -o-linear-gradient(left,  #eeeeee 0%,#cccccc 100%);
+	background: -ms-linear-gradient(left,  #eeeeee 0%,#cccccc 100%);
+	background: linear-gradient(to right,  #eeeeee 0%,#cccccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );
+    color: #000;
+}
+
+
+/*
+-----------------------
+-----------------------
+
+   ESTILOS FORMULARIO 
+
+-----------------------
+-----------------------
+*/
+
+.contacto-principal form input[type="text"], form input[type="email"], .contacto-secundario form textarea{
+	width: 100%;
+	padding:12px;
+	border:none;
+	font-size: 1em;
+	margin-bottom: 1.5em;
+	color: #000;
+	background: #D8D8D8;
+	outline: none;
+	font-weight: 600;
+	border-radius: 5px;
+	border: 2px solid #A4A4A4;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+/* ESTADO EN FOCO -- MUY IMPORTANTE */
+.contacto-principal form input[type="text"]:focus, form input[type="email"]:focus, .contacto-secundario form textarea:focus{
+	border: 1px solid #000;
+	box-shadow: 0px 0px 10px #fea; 
+}
+
+/* ESTADO HOVER */
+.contacto-principal form input[type="text"]:hover, form input[type="email"]:hover, .contacto-secundario form textarea:hover{
+	border: 1px solid #A9E2F3;
+	box-shadow: 0px 0px 3px #000;
+}
+
+/* APICABLE CAMBIO DE LETRA - TEXTAREA, EMAIL Y TEXT GENERAL */
+textarea, [type="text"], [type="email"]{
+	font-weight: bold;
+	font-family: 'Exo', sans-serif;
+}
+
+.contacto-secundario form textarea {
+	height: 175px;
+	font-weight: 600;
+}
+
+.contacto-secundario form input[type="submit"]{
+	width: 100%;
+	padding:12px;
+	border:2px solid #E04444;
+	font-size: 0.95em;
+	font-family: 'Exo', sans-serif;
+	color: #E04444;
+	letter-spacing:1.5px;
+	background: transparent;
+	font-weight: bold;
+	transition: 0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+.contacto-secundario form input[type="submit"]:hover {
+	border:2px solid #000;
+	color:#232323;
+	cursor: pointer;
+}
+
+form input[type="checkbox"] {
+	vertical-align:top;
+	margin-right:2%;
+}
+
+p.confirmacion-envio {
+	display: inline-block;
+	color: #000;
+	font-size: 0.95em;
+	font-weight: 400;
+	width:90%;
+}
+
+/* ERROR 404 */
+
+.error img{
+	width: 100% !important;
+	max-width: 100%;
+	height: 100% !important;
+	max-height: 100%;
+	display: block;
+	margin: 0px auto;
+	margin-top: -1.6em;
+}
+
+
+
+/*
+-----------------------
+-----------------------
+
+    BOTON FLOTANTE FB
+
+-----------------------
+-----------------------
+*/    
+
+.boton-flotante{
+	width: 30px;
+	height: 100px;
+	background: url("../img/fb-flotante.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	margin-top: 25%;
+	z-index: 999999;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+	-o-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.boton-flotante:hover{
+	width: 30px;
+	height: 100px;
+	background: url("../img/fb-flotante-hover.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 999999;
+}

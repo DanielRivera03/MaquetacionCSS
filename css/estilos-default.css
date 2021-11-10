@@ -1,0 +1,139 @@
+
+ /* ESTILOS POR DEFAULT PARA TODOS LOS ELEMENTOS */
+
+/* CAJAS FREXIBLES  -- TODOS LOS ELEMENTOS DE ESTA WEB */
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+
+*:before,
+*:after{
+   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* RESETEO DEL BODY -- TODOS LOS ELEMENTOS DENTRO DE EL */
+body{
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+/* TAMAÑOS DE LETRAS DE TODOS LOS ENCABEZADOS */
+
+h1{
+  font-size: 32px;
+}
+
+
+h2{
+  font-size: 28px;
+}
+
+
+h3{
+  font-size: 22px;
+}
+
+
+h4{
+  font-size: 16px;
+}
+
+
+h5{
+  font-size: 12px;
+}
+
+
+h6{
+  font-size: 10px;
+}
+
+/* COLUMNAS - ORIENTACION Y TAMAÑO EN PORCENTAJES  -- PIXELES EN POSICIONAMIENTO */
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* ORIENTACION */
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12 {
+  float: left;
+}
+
+/* TAMAÑOS DE CAJAS */
+
+.columnas-12 {
+  width: 100%;
+}
+
+
+.columnas-11 {
+  width: 91.66%;
+}
+
+
+.columnas-10 {
+  width: 83.33%;
+}
+
+
+.columnas-9 {
+  width: 75%;
+}
+
+
+.columnas-8 {
+  width: 66.66%;
+}
+
+
+.columnas-7 {
+  width: 58.33%;
+}
+
+
+.columnas-6 {
+  width: 50%;
+}
+
+
+.columnas-5 {
+  width: 41.66%;
+}
+
+
+.columnas-4 {
+  width: 33.33%;
+}
+
+
+.columnas-3 {
+  width: 25%;
+}
+
+
+.columnas-2 {
+  width: 16.66%;
+}
+
+
+.columnas-1 {
+  width: 8.33%;
+}
+

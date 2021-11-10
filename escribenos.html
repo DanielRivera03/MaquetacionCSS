@@ -1,0 +1,130 @@
+<!--
+
+____________________________________________________________________________________________________________________________________________
+
+
+		PPPPPPPPPP        AAAAAAAA      TTTTTTTTTT   RRRRRRRRRRR   IIIIIIIIIIT         AAAAAAAA                   CCCCCCCCC   RRRRRRRRRRRR
+		PPP    PPP       AAA    AAA     TTTTTTTTTT   RRR     RRR   IIIIIIIIIII        AAA    AAA                  CCCCCCCCC   RRR      RRR
+		PPP    PPP      AAA      AAA       TTT       RRRRRRRRRRR      IIII           AAA      AAA                 CCCC        RRRRRRRRRRRR
+		PPPPPPPPPP     AAAAAAAAAAAAAA      TTT       RRRRR            IIII          AAAAAAAAAAAAAA    <@@@@@@@>   CCCC        RRRRRRRR
+		PPP           AAA          AAA     TTT       RRR RRR          IIII         AAA          AAA               CCCC        RRR     RRR
+		PPP          AAA            AAA    TTT       RRR   RRR     IIIIIIIIIII    AAA            AAA              CCCCCCCCC   RRR      RRR
+		PPP         AAA              AAA   TTT       RRR     RRR   IIIIIIIIIII   AAA              AAA             CCCCCCCCC   RRR       RRR
+
+_____________________________________________________________________________________________________________________________________________	
+
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="El&iacute;as Mart&iacute;nez">
+	<title>..::Costa Rica - Patria Querida  |  Inicio..::</title>
+	<meta name="description" content="Bienvendidos a nuestro portal, en el podra encontrar toda la información referente a nuestra querida patria Costa Rica, Centroamerica">
+	<meta name="distribution" content="Global">
+	<link rel="stylesheet" type="text/css" href="css/estilos-generales.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos-default.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!-- FAVICON - BARRA DE DIRECCIONES -->
+	<link rel="icon" type="image/png" href="img/favicon.png" />			
+<!-- meta funcional para adaptaciones 100% responsive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Costa Rica, Patria Querida, Playas, Centroamerica, Pura Vida">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,500,700,600,800,300,100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Exo:400,500,700,400italic' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.min.js"> </script>
+</head>
+<body>
+<div class="banner-subcontenido">
+<a href="https://www.facebook.com/PatriaCR?fref=ts" target="blank"><div class="boton-flotante"></div></a>
+	<div class="contenedor">
+		<div class="top-header">
+			<div class="logo">
+				<a href="index.html"><img class="lg-top" src="img/logo.png" title="Costa Rica - Patria Querida" alt="Logo Principal"></a>
+			</div><!-- LOGO -->
+			<div class="top-menu">
+				<span class="menu"></span>
+					<nav class="menu-efecto responsivo">
+						<ul>
+							<li class="animacion-menu"><a href="index.html">Inicio</a></li>
+	 <!-- ENLACE INTERNO --><li class="animacion-menu"><a class="scroll" href="#historia">Historia</a></li><!-- FIN DE ENLACE INTERNO -->
+							<li class="animacion-menu"><a href="personajes.html">Personajes</a></li>
+							<li class="animacion-menu"><a href="linea-de-tiempo.html">L&iacute;nea de Tiempo</a></li>
+							<li class="animacion-menu"><a href="simbolos-patrios.html">S&iacute;mbolos Patrios</a></li>
+							<li class="animacion-menu"><a href="gastronomia.html">Gastronomia</a></li>
+							<li class="animacion-menu"><a href="multimedia.html">Multimedia</a></li>
+						</ul>
+					</nav>
+				</div><!-- TOP-MENU -->
+				<!-- MENU DESPLEGABLE - SCRIPT -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- FIN MENU DESPLEGABLE - SCRIPT -->	  	
+			<div class="bloque-seccion-caja"></div>
+				<div class="banner-informacion-subcontenido">	
+				<h1>Escribenos</h1>
+				</div>
+		  </div><!-- TOP-HEADER -->
+	  </div><!-- CONTENEDOR -->
+</div><!-- BANNER -->
+<div id="informacion" class="informacion-escribenos"> <!-- BLOQUE - ESCRIBENOS 'CR' -->
+	 <div class="contenedor">
+		 <div class="informacion-titulo-escribenos">
+			 <h3>¿Tienes Dudas?</h3>
+			 <p>Estamos Para Servirte, Puedes Escribirnos</p>
+		 </div> 
+		 <div class="informacion-margin">
+			 <div class="columnas-12 informacion-cr">
+			 	<div class="bg-movil"></div>
+			 			<div class="line-hr"></div>
+				 			<div class="contacto-principal">
+						 		<form method="POST">
+					     			<input type="text" pattern="[a-z]" title="Ingrese Su Nombre (Solo Letras)" placeholder="Nombre Completo" required/>
+						 			<input type="text" pattern="[a-z]" title="Ingrese Su Asunto (Solo Letras)" placeholder="Asunto" required/>
+						 			<input type="email" pattern="/[\w-\.]{3,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/" title="Ingresa Tu Correo Electronico: nombre@dominio.com" placeholder="Correo Elect&oacute;nico" />
+								 </form>
+							 </div><!-- CONTACTO - PRINCIPAL -->
+					 		<div class="contacto-secundario">
+							 <form>
+								 <textarea pattern="[a-z]" title="Ingrese Su Mensaje (Maximo 300 Caracteres)" placeholder="Escribe Tu Mensaje Aqu&iacute;" maxlength="300" required></textarea>
+								 <input type="checkbox"/>
+						 			<p class="confirmacion-envio">¿Quieres que te enviemos una copia de este mensaje a tu correo?</p>
+						 		<input type="submit" value="ENVIAR MENSAJE"/>
+						 	</form>
+						 </div><!-- CONTACTO - SECUNDARIO -->
+					 				<div class="bloque-seccion-caja"></div>
+				 				</div>
+							</div> 
+						</div>
+					</div>
+				</div>			
+			<div class="footer">
+	 <div class="contenedor">
+		 <div class="footer-logo">
+			 <a href="index.html"><img class="animacion-secundaria" src="img/logo.png" alt=""/></a>
+		 </div>
+		 <p class="footer-info">Copyright &copy; 2015 Costa Rica  |  Patria Querida</p>
+		 <div class="email">
+			<a href="mailto:desarrollador@patriacr.org"><span class="mail">desarrollador@patriacr.org</span></a>				 
+		 </div>
+		 <div class="bloque-seccion-caja"></div>
+	 </div>
+	 <div class="bg-footer">
+	 	<a href="mapa-del-sitio.html">Mapa del Sitio</a>
+	 		<li>|</li>
+	 	<a href="escribenos.html">Escribenos</a>
+	</div>
+</div>
+<!-- ANIMACION SCROLL HACIA ARRIBA -->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow4.js"></script>	
+</body>
+</html>

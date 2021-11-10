@@ -1,0 +1,634 @@
+
+/* ESTILOS RESPONSIVE DESIGN PARA DISPOSITIVOS MOVILES Y TABLETAS */
+
+@media (max-width: 1440px){
+
+
+.sub_texto {
+	padding: 3.7em;
+}
+}/* CIERRE DE MAX WIDTH ADAPTABLE */
+
+
+@media (max-width: 1366px){
+
+
+.sub_texto {
+	padding: 3.2em;
+}
+}/* CIERRE DE MAX WIDTH ADAPTABLE */
+
+
+@media (max-width: 1280px){
+
+
+.sub_texto {
+	padding: 2.7em;
+}
+}/* CIERRE DE MAX WIDTH ADAPTABLE */
+
+
+@media (max-width: 1024px){
+
+
+.top-header {
+	margin-top: 3em;
+}
+
+
+.banner-informacion {
+	margin-top: 15em;
+}
+
+
+.banner-informacion h1 {
+	font-size: 3em;
+}
+
+
+.banner-informacion h3 {
+	font-size: 0.97em;
+	width: 80%;
+}
+
+
+.banner-informacion h4 {
+	font-size:0.9em;
+}
+
+
+nav ul li a {
+	font-size: 1em;
+}
+
+
+.banner {
+	min-height: 615px;
+}
+
+.social-red {
+	height: 112px;
+}
+
+.facebook{
+	padding: 3em 2em;
+	background: url("../img/fb-icon-1024.png");
+}
+
+
+.twitter{
+	padding: 2.3em 2em;
+	background: url("../img/tw-icon-1024.png")
+}
+
+
+.youtube{
+	padding: 2.5em 2em;
+	background: url("../img/yt-icon-1024.png")
+}
+
+
+.escribenos{
+	padding: 2.5em 2em;
+	background: url("../img/ct-icon-1024.png")
+}
+
+.galeria{
+	padding: 4em 0 5em 0;
+}
+
+
+.sub_texto{
+	padding: 1.7em 1em;
+}
+
+
+.sub_texto h4{
+	font-size: 0.9em;
+	margin-bottom: 1em;
+}
+}/* CIERRE DE MAX WIDTH ADAPTABLE */
+
+@media (max-width: 768px){
+.informacion{
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background: url("../img/bg-movil.png");
+	background-size: 100% 100%;
+}
+
+span.menu:before{
+	content: url("../img/nav-icon.png");
+	cursor: pointer;	
+	height:32px;
+}
+
+.top-menu {
+	width: 11%;
+	float: right;
+	margin:0;
+	margin-bottom: 7em;
+}
+
+.informacion-titulo{
+	width: 100%;
+	max-width: 725px;
+	text-align: center;
+}
+
+
+nav.responsivo > ul{
+	display: block;
+	border-radius: 10px;
+	display: none;
+}
+
+
+nav ul li {
+	display: inline-block;
+	width: 100%;
+}
+
+
+nav ul li a {
+	padding: 0.2em;
+	font-size: 1em;
+	width: 100%;
+	font-weight: 600;
+	display: block;
+}
+
+
+nav ul li a:hover{
+	color: #FFFFFF;
+	font-size: 1em;
+}
+
+span.menu{
+	float:right;
+	margin: 11px 15px 0 0;
+}
+
+
+nav ul{
+	margin-top: 1.5em;
+	z-index: 999;
+	position: absolute;
+	width: 96%;
+	text-align: center;
+	top: 11%;
+	left: 2%;
+	background:rgba(224, 68, 68, 0.2);
+}
+
+.banner-informacion {
+	width: 100%;
+	height: 100%;
+	margin-top: 4.5em;
+}
+
+
+.banner-informacion h1 {
+	font-size: 2.5em;
+}
+
+
+.banner-informacion h3 {
+	font-size: 0.9em;
+	width: 78%;
+}
+
+.banner {
+	min-height: 500px;
+}
+
+.facebook{
+	padding: 3em 2em;
+	background: url("../img/fb-icon-768.png");
+}
+
+
+.twitter{
+	padding: 2.3em 2em;
+	background: url("../img/tw-icon-768.png")
+}
+
+
+.youtube{
+	padding: 2.5em 2em;
+	background: url("../img/yt-icon-768.png")
+}
+
+
+.escribenos{
+	padding: 2.5em 2em;
+	background: url("../img/ct-icon-768.png")
+}
+
+.informacion-cr li{
+	margin-left: 1.5em;
+}
+
+.banner-informacion-subcontenido h1{
+	text-decoration: none;
+	margin-top: -1.4em;
+}
+
+#empanada, #sopa-negra, #guiso-ayote, #tamal-asado, #gallo-pinto, #carne-mechada{
+	margin-bottom: 2em;
+	width: 100%;
+	max-width: 100% !important;
+	height: 325px;
+	display: block;
+	float: none;
+}
+
+#empanada:hover, #sopa-negra:hover, #guiso-ayote:hover, #tamal-asado:hover, #gallo-pinto:hover, #carne-mechada:hover{
+	width: 100%;
+	max-width: 100% !important;
+	height: 325px;
+}
+
+.margen-caja{
+    margin: 15% auto;
+}
+
+.ventana-desplegable:target .margen-caja{       
+    margin: 15% auto;
+}
+
+.caja-ventana-empanada{
+    width: 100%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-movil-1.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 400px;
+}
+
+.caja-ventana-sopa{
+    width: 100%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-movil-2.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 400px;
+}
+
+.caja-ventana-guiso{
+    width: 100%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-movil-3.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 400px;
+}
+
+.caja-ventana-tamal{
+    width: 100%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-movil-4.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 400px;
+}
+
+.caja-ventana-gallo{
+    width: 100%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-movil-5.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 400px;
+}
+
+.caja-ventana-carne{
+    width: 100%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-preparacion-movil-6.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: 400px;
+}
+
+.caja-ventana-simbolos{
+    width: 100%;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all 500ms ease-in;  
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    background: url("../img/bg-ventanas-multimedia.png");
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	height: auto;
+}
+
+
+.boton-flotante{
+	display: none;
+}
+
+/* APLICABLES A TODAS LAS MEDIDAS MOVILES */
+
+.categorias img{
+	margin-bottom: 1em;
+	display: block;
+	float: none;
+	width: 100% !important;
+	max-width: 100%;
+	height: 100% !important;
+	max-height: 100%;
+}
+
+#rio-celeste, #playa-flamingo, #zoo-bolivar, #playa-hermosa, #playa-avenalla, #volcan-arenal, #iglesia-los-angeles, #san-jose-central{
+	margin-bottom: 1em;
+	display: block;
+	float: none;
+	width: 100% !important;
+	max-width: 100%;
+	height: 510px !important;
+	max-height: 100%;
+}
+
+#historia-cr, #ciudad-cr, #cultura-cr, #deporte-cr{
+	margin-bottom: 1em;
+	display: block;
+	float: none;
+	width: 100% !important;
+	max-width: 100%;
+	height: 510px !important;
+	max-height: 100%;
+}
+
+/* SIMBOLOS PATRIOS */
+.caja-ventana-simbolos img{
+	width: 100% !important;
+	max-width: 100%;
+	height: 180px;
+	margin-bottom: 1.3em;
+}
+
+#bandera, #escudo, #himno, #flor, #arbol, #ave{
+	margin-bottom: 1em;
+	display: block;
+	float: none;
+	width: 100% !important;
+	max-width: 100%;
+	height: 510px !important;
+	max-height: 100%;
+}
+
+/* SECCION DE AUDIOS */
+#audio1-cr, #audio2-cr{
+	margin-bottom: 1em;
+	display: block;
+	float: none;
+	width: 100% !important;
+	max-width: 100%;
+	height: 510px !important;
+	max-height: 100%;
+}
+
+/* VENTANAS DEPLEGABLES -- MULTIMEDIA FOTOS */
+.caja-ventana-multimedia{
+	width: 100% !important;
+	max-width: 100%;
+	height: auto;
+	max-height: 800px !important;
+}
+
+.caja-multimedia-video{
+	width: 100% !important;
+	max-width: 100%;
+	height: auto;
+	max-height: 800px !important;
+}
+
+.secciones-mapa{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	display: block;
+	float: none;
+	margin-bottom: 1.35em;
+}
+
+/* FIN DE IMAGENES RESPONSIVAS A ELEMENTOS ESPECIFICOS */
+
+#sublink, #sublink a{
+	display: none;
+}
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12 {
+  float: none;
+}
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12 {
+	width: 100% !important;
+	max-width: 100%;
+}
+
+
+}/* CIERRE DE MAX WIDTH ADAPTABLE */
+
+@media screen (max-width: 640px){
+	
+.informacion{
+	width: 100% !important;
+	height: 100% !important;
+	max-height: 100% !important;
+}
+
+
+.banner {
+	min-height: 400px;
+}
+
+
+.banner-informacion {
+	margin-top: 6em;
+}
+
+
+.banner-informacion h1 {
+	font-size: 2em;
+}
+
+
+.banner-informacion h3 {
+	font-size: 0.85em;
+	width: 78%;
+}
+
+
+.banner-informacion h4 {
+	font-size: 0.7em;
+}
+
+#sublink, #sublink a{
+	display: none;
+}
+
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12 {
+  float: none;
+}
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12 {
+	width: 100% !important;
+	max-width: 100%;
+}
+} /* CIERRE DE MAX WIDTH ADAPTABLE */
+
+@media screen(max-width: 480px){
+.informacion{
+	width: 100% !important;
+	height: 100% !important;
+	max-height: 100% !important;
+}
+
+.top-menu {
+	width: 11%;
+	margin: 2% 0  0;
+}
+
+
+span.menu {
+	margin:0;
+}
+
+
+.top-header {
+	margin-top: 2em;
+}
+
+
+.top-menu ul {
+	top: 9%;
+}
+
+
+.banner {
+	min-height:300px;
+}
+
+
+.banner-informacion {
+	margin-top: 4em;
+}
+
+
+.banner-informacion h1 {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+}
+
+
+.banner-informacion h3 {
+	font-size: 0.8em;
+	overflow: hidden;
+	height: 31px;
+}
+
+#sublink, #sublink a{
+	display: none;
+}
+
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12 {
+  float: none;
+}
+
+.columnas-1, .columnas-2, .columnas-3, .columnas-4, .columnas-5, .columnas-6, .columnas-7, .columnas-8, .columnas-9, .columnas-10, .columnas-11, .columnas-12 {
+	width: 100% !important;
+	max-width: 100%;
+}
+} /* CIERRE DE MAX WIDTH ADAPTABLE */
+
+/* ESTILOS RESPONSIVOS DE CONTENEDOR GENERAL DEL SITIO -- RESET DE CONTENEDORES  */
+
+@media (min-width: 768px) {
+.contenedor {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width: 768px) {
+  .contenedor {
+    width: 750px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .contenedor{
+    width: 970px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .contenedor{
+    width: 1170px;
+  }
+}
+
