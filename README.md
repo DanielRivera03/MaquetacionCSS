@@ -11,7 +11,7 @@
 
 <h2>¿Deseas ver la demo de este proyecto?</h2>
 
-<p>Solamente accede al siguiente enlace: https://danielrivera03.github.io/maquetacion-html-css/</p>
+<p>Solamente accede al siguiente enlace: https://danielrivera03.github.io/MaquetacionCSS/ </p>
 
 
 <h2>Algunas Capturas</h2>
